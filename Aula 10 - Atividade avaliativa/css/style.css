@@ -1,113 +1,138 @@
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body,header,div{
+/*body,header,div{
     border: 1px solid black;
+}*/
+header,
+main {
+    background-color: RGB(255, 194, 52);
 }
-header, main {
-    background-color: RGB(255,194,52);
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
-    background-color: RGB(255,194,52) !important;
+    background-color: RGB(255, 194, 52) !important;
 
 }
-.nav_list{
-    color: rgb(65,31,9);
+
+.nav_list {
+    color: rgb(65, 31, 9);
 }
-main{
+
+.container_header {
     display: flex;
-    justify-content: space-around;
 }
-.container_logo_image{
+
+.container_logo_image {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
     padding: 20px;
-    gap:100px;
+    gap: 100px;
 }
-.container_logo{
-   align-content: center; 
-   flex-direction: column;
-   justify-content: space-around;
+
+.container_logo {
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
-.preco{
+
+.preco {
     position: relative;
     bottom: 100px;
 }
-.dotted_text{
-    font-family: 'Roboto', sans-serif; 
+
+.dotted_text {
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    border: 2px dashed RGB(65,31,9);
+    border: 2px dashed RGB(65, 31, 9);
     font-weight: bold;
     padding: 5px;
 }
-.burger_title{
+
+.burger_title {
     font-size: 100px;
     font-family: 'Roboto Slab', serif;
-    font-weight: bolder; 
+    font-weight: bolder;
 }
-.week_title{
+
+.week_title {
     font-size: 70px;
     font-family: 'Roboto Slab', serif;
-    font-weight: bolder; 
+    font-weight: bolder;
 }
-.container_image{
+
+.container_image {
     align-self: flex-end;
 }
-#menu{
+
+#menu {
     display: flex;
     justify-content: center;
 }
-.menu_flex{
+
+.menu_flex {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
     justify-content: space-between;
 }
-.menu_direita{
+
+.menu_direita {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.menu1, .menu2, .menu3{
+
+.menu1,
+.menu2,
+.menu3 {
     padding: 20px;
 }
-#menu h6{
+#menu h6 {
     color: white;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     font-size: 17px;
     font-weight: bolder;
 }
-#menu h5{
+
+#menu h5 {
     color: white;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: bolder;
 }
-.menu1{
+
+.menu1 {
     background-image: url("../img/sessao1/fundo1.png") !important;
     width: 549px;
     height: 387px;
 }
-.menu2{
+
+.menu2 {
     background-image: url("../img/sessao1/fundo2.png") !important;
     width: 548px;
     height: 177px;
 }
-.menu3{
+
+.menu3 {
     background-image: url("../img/sessao1/fundo3.png") !important;
     width: 548px;
     height: 177px;
 }
-#cards{
+.cards_intro {
+    text-align: center;
+}
+.cards{
     display: flex;
     flex-grow: 1;
     margin: 50px;
@@ -115,81 +140,338 @@ main{
     align-items: end;
     gap: 20px;
 }
-.card img{
+.card img {
     size: 90%;
 }
-.card{
+
+.card {
     border: none;
     text-align: center;
 }
-.card h5{
-    color: RGB(65,31,9);
-    font-family: 'Roboto', sans-serif; 
+
+.card h5 {
+    color: RGB(65, 31, 9);
+    font-family: 'Roboto', sans-serif;
     font-size: 28px;
     font-weight: bolder;
 }
-.card p{
-    color: RGB(65,31,9);
-    font-family: 'Roboto', sans-serif; 
+
+.card p {
+    color: RGB(65, 31, 9);
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: bolder;
 }
-.card a{
-    background-color:RGB(223,28,28);
+
+.card a {
+    background-color: RGB(223, 28, 28);
     border: none;
-    border-radius:0%;
-    font-size: 20pxpx;
+    border-radius: 0%;
+    font-size: 20px;
     font-family: 'Roboto Slab', serif;
-    font-weight: bolder; 
+    font-weight: bolder;
 }
-#event{
+
+#event {
     display: flex;
-    
+    margin: 20px;
+
 }
-.event_container{
+
+.event_container {
     display: flex;
     margin: 20px;
     justify-content: space-around;
 }
-.event_text{
+
+.event_text {
     padding: 20px;
 }
-h5{
+
+h5 {
     font-size: 60px;
     font-family: 'Roboto Slab', serif;
-    font-weight: bolder; 
+    font-weight: bolder;
 }
-h6{
-    font-family: 'Roboto', sans-serif; 
+
+h6 {
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: bold;
 
 }
-#form{
+
+#form {
     margin: 20px;
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
-.formulario{
+
+form {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.form_direita{
+
+input {
+    background-color: RGB(255, 194, 52);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    color: RGB(65, 31, 9);
+}
+
+input[type=button] {
+    background-color: RGB(223, 28, 28) !important;
+    text-align: center;
+    color: white;
+}
+
+input::placeholder {
+    color: RGB(65, 31, 9);
+}
+
+.form_esquerda {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    margin: 10px;
 }
-footer{
-    display:flex;
+
+.form_direita {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
 }
-.footer_banner{
+
+.footer_banner {
+    height: 483px;
+    display: flex;
     flex-direction: row;
     background-image: url("../img/rodape/fundo.png");
-    justify-content: space-evenly;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    padding: 100px;
 }
-.footer_text{
+
+.footer_text {
     width: 50%;
 }
-.local, .email{
+
+.footer_contact {
     flex-direction: column;
+}
+
+.local,
+.email {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer_text p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.footer_contact h6 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+footer img {
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    header,
+    main {
+        background-color: RGB(255, 194, 52);
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        background-color: RGB(255, 194, 52) !important;
+
+    }
+
+    .nav_list {
+        color: rgb(65, 31, 9);
+    }
+
+    .container_logo_image {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        padding: 20px;
+        gap: 100px;
+    }
+
+    .container_logo {
+        align-content: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .preco {
+        position: relative;
+        bottom: 100px;
+    }
+
+    .container_image {
+        align-self: flex-end;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .menu_direita {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .menu1,
+    .menu2,
+    .menu3 {
+        padding: 20px;
+    }
+
+    #menu h6 {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        font-weight: bolder;
+    }
+
+    .menu1 {
+        background-image: url("../img/sessao1/fundo1.png") !important;
+        width: 549px;
+        height: 387px;
+    }
+
+    .menu2 {
+        background-image: url("../img/sessao1/fundo2.png") !important;
+        width: 548px;
+        height: 177px;
+    }
+
+    .menu3 {
+        background-image: url("../img/sessao1/fundo3.png") !important;
+        width: 548px;
+        height: 177px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 50px;
+        gap: 20px;
+    }
+
+    .card {
+        border: none;
+        text-align: center;
+    }
+
+    #event {
+        display: flex;
+        margin: 20px;
+
+    }
+
+    .event_container {
+        display: flex;
+        margin: 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .event_text {
+        padding: 20px;
+    }
+
+    .event_image {
+        object-fit: contain;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .form_esquerda {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form_direita {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .footer_banner {
+        height: 483px;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../img/rodape/fundo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 100px;
+    }
+
+    .footer_text {
+        width: 50%;
+        margin: 20px;
+    }
+
+    .footer_contact {
+        flex-direction: column;
+    }
+
+    .local,
+    .email {
+        display: flex;
+        flex-direction: row;
+    }
 }
